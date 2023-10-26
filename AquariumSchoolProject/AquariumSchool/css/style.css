@@ -307,7 +307,7 @@ a:focus {
 }
 
 .service_section .img_box img {
-  width: 45px;
+  width: 70px;
 }
 
 .service_section .detail_box {
@@ -330,6 +330,8 @@ a:focus {
   background-color: transparent;
   color: #023b48;
 }
+
+
 
 .gallery-section {
   background-color: #0dc3ff;
@@ -602,6 +604,8 @@ a:focus {
 .info_items .item .img-box.box-3 {
   background-image: url(../images/envelope-white.png);
 }
+
+
 
 /* footer section*/
 .footer_section {

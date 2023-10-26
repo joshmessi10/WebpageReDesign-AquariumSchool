@@ -89,6 +89,54 @@
 
   <!-- service section -->
   <section class="service_section layout_padding">
+    <style>
+      .button {
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+      .button {
+        background-color: #023b48;
+        border: 1px solid #023b48;
+        color: #ffffff;
+      }
+
+      .button:hover {
+        background-color: #4CAF50;
+        color: white;
+      }
+      .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+
+      .active, .accordion:hover {
+        background-color: #ccc;
+      }
+
+      .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+      </style>
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 offset-md-2">
@@ -99,7 +147,7 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="img_box">
-                  <img src="images/s-1.png" alt="">
+                  <img src="resources/principiante.png" alt="">
                 </div>
                 <div class="detail_box">
                   <h6>
@@ -108,11 +156,52 @@
                   <p>
                     Aquí tus hijos podrán empezar a familiarizarse con el medio acuático, adquiriendo habilidades básicas.
                   </p>
+                  
+                  <button class="button" onclick="window.modal1.showModal();">Saber más</button>
+
+                  <dialog id="modal1">
+                    <button onclick="window.modal1.close();" style="float: right;">X</button>
+                    <h2 class="custom_heading"><span>Principiante</span></h2>
+                    <p>Principiante está compuesto por 2 niveles:</p>
+                    <button class="accordion">Adaptación Básica</button>
+                    <div class="panel">
+                      <p><ul>
+                        <li>Correcciones estilo global pecho</li>
+                        <li>Agarre</li>
+                        <li>Tirón</li>
+                        <li>Recobro</li>
+                        <li>Trabajos de respiración estilo braza</li>
+                        <li>Ejercicios de desplazamiento dorsal y ventral</li>
+                        <li>Coordinación</li>
+                        <li>Entradas al agua</li>
+                        <li>Virajes</li>
+                      </ul>
+                    </p>
+                    </div>
+
+                    <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+
+                    for (i = 0; i < acc.length; i++) {
+                      acc[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.maxHeight) {
+                          panel.style.maxHeight = null;
+                        } else {
+                          panel.style.maxHeight = panel.scrollHeight + "px";
+                        } 
+                      });
+                    }
+                    </script>
+                    
+                  </dialog>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="img_box">
-                  <img src="images/s-2.png" alt="">
+                  <img src="resources/intermedio.png" alt="">
                 </div>
                 <div class="detail_box">
                   <h6>
@@ -121,11 +210,19 @@
                   <p>
                     Aquí tus hijos aprenderán las habilidades iniciales de los diferentes estilos de natación.
                   </p>
+                  <button class="button" onclick="window.modal2.showModal();" >Saber más</button>
+
+                  <dialog id="modal2">
+                    <button onclick="window.modal2.close();" style="float: right;">X</button>
+                    <h2 class="custom_heading"><span>Intermedio</span></h2>
+                    <p>Intermedio está compuesto por 4 niveles:   </p>
+                    
+                  </dialog>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="img_box">
-                  <img src="images/s-3.png" alt="">
+                  <img src="resources/avanzado.png" alt="">
                 </div>
                 <div class="detail_box">
                   <h6>
@@ -134,18 +231,52 @@
                   <p>
                     Aquí tus hijos podrán reforzar sus habilidades y conocimientos de los estilos de natación aprendidos.
                   </p>
+                  <button class="button" onclick="window.modal3.showModal();">Saber más</button>
+
+                  <dialog id="modal3">
+                    <button onclick="window.modal3.close();" style="float: right;" >X</button>
+                    <h2 class="custom_heading"><span>Avanzado</span></h2>
+                    <p>Avanzado está compuesto por 4 niveles:</p>
+                    <button class="accordion">Perfección Estilo Pecho</button>
+                    <div class="panel">
+                      <p><ul>
+                        <li>Correcciones estilo global pecho</li>
+                        <li>Agarre</li>
+                        <li>Tirón</li>
+                        <li>Recobro</li>
+                        <li>Trabajos de respiración estilo braza</li>
+                        <li>Ejercicios de desplazamiento dorsal y ventral</li>
+                        <li>Coordinación</li>
+                        <li>Entradas al agua</li>
+                        <li>Virajes</li>
+                      </ul>
+                    </p>
+                    </div>
+                    <script>
+                      var acc = document.getElementsByClassName("accordion");
+                      var i;
+                      
+                      for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function() {
+                          this.classList.toggle("active");
+                          var panel = this.nextElementSibling;
+                          if (panel.style.maxHeight) {
+                            panel.style.maxHeight = null;
+                          } else {
+                            panel.style.maxHeight = panel.scrollHeight + "px";
+                          } 
+                        });
+                      }
+                      </script>
+                  </dialog>
+                
                 </div>
               </div>
             </div>
           </div>
-          <div>
-            <a href="">
-              Read More
-            </a>
-          </div>
         </div>
         <div class="col-md-4">
-          <img src="images/tool.png" alt="" class="w-100">
+          <img src="resources/swimmer.png" alt="" class="w-100">
         </div>
       </div>
     </div>
