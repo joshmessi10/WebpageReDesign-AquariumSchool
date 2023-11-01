@@ -163,11 +163,11 @@ a:focus {
 /*end header section*/
 /* slider section */
 .slider_section {
-  background-image: url(../resources/poolBackground.png);
-  padding: 6% 0;
+  background-image: url(../resources/poolBackground1.png);
+  padding: 10% 0;
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: 1900px;
+  background-size: 1500px;
 }
 
 .slider_section .row {
@@ -177,56 +177,77 @@ a:focus {
 }
 
 .slider_detail-box h1 {
-  color: #0036e9;
+  color: #005b96;
   font-size: 52px;
   font-weight: 700;
 }
 
 .slider_detail-box h1 span {
   display: inline-block;
-  color: #434242;
+  color: #005b96;
   font-weight: bold;
 }
 
 .slider_detail-box p {
-  color: #f6f8f7;
+  color: #005b96;
   margin-top: 45px;
   margin-bottom: 40px;
+  font-weight: bold;
 }
 
 .slider_detail-box .btn-box .btn-1 {
   display: inline-block;
   padding: 10px 45px;
   background-color: #023b48;
-  border: 1px solid #023b48;
+  border: 1px solid #3388FF;
   color: #ffffff;
   margin-right: 10px;
+
 }
 
 .slider_detail-box .btn-box .btn-1:hover {
-  background-color: transparent;
-  color: #023b48;
+  background-color: #3388FF;
+  color: white;
+  border: 1px solid #3388FF;
 }
 
 .slider_detail-box .btn-box .btn-2 {
   display: inline-block;
   padding: 10px 45px;
   background-color: #ffffff;
-  border: 1px solid #ffffff;
+  border: 1px solid #3388FF;
   color: #023b48;
 }
 
 .slider_detail-box .btn-box .btn-2:hover {
-  background-color: transparent;
-  color: #ffffff;
+  background-color: #3388FF;
+  color: black;
+  border: 1px solid #3388FF;
 }
 
 .slider_img-box {
-  margin-right: 5%;
+  margin-right: -15%;
 }
 
 .slider_img-box img {
+  box-shadow: 0 0 0 5px #77CCFF, 0 0 0 10px #0066FF;
+}
+.slider_img-box .slider1 {
+  width: 60%;
+  box-shadow: 0 0 0 5px #77CCFF, 0 0 0 10px #0066FF;
+}
+.slider_img-box .slider2 {
   width: 50%;
+  box-shadow: 0 0 0 5px #77CCFF, 0 0 0 10px #0066FF;
+}
+.slider_img-box .slider3 {
+  width: 50%;
+  text-align: center;
+  box-shadow: 0 0 0 5px #77CCFF, 0 0 0 10px #0066FF;
+}
+.slider_img-box .slider4 {
+  width: 56%;
+  box-shadow: 0 0 0 5px #77CCFF, 0 0 0 10px #0066FF;
 }
 
 .carousel-indicators {
@@ -253,6 +274,19 @@ a:focus {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+.about_section .btn-box .btn-2 {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #023b48;
+}
+
+.about_section .btn-box .btn-2:hover {
+  background-color: #3388FF;
+  color: black;
+  border: 1px solid #3388FF;
 }
 
 .about_section .img-box img {
