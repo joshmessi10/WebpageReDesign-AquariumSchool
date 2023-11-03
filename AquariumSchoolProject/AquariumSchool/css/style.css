@@ -830,6 +830,101 @@ a:focus {
 
 /* about section end */
 
+/*Admission-Section Starts Here*/
+.admission-form {
+    justify-content: space-between;
+    margin-bottom: -1rem;
+}
+
+.admission-form .form-group {
+    width: calc(50% - 15px);
+}
+
+.admission-form .form-group label {
+    color: #040e27;
+}
+
+.admission-form .form-group input {
+    background: transparent;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    height: 50px;
+}
+
+.admission-form .form-group input[type="submit"] {
+    width: auto;
+    height: 60px;
+    padding: 0 40px;
+    background: #2560d4;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.admission-form .form-group .select-bar {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    height: 50px;
+}
+
+.admission-form .form-group .select-bar span {
+    line-height: 50px;
+}
+
+.admission-form .form-group .select-bar .list {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+@media (max-width: 575px) {
+    .admission-form .form-group {
+        width: 100%;
+    }
+}
+
+/* price section*/
+.price-section{
+  font-weight: 500;
+	border: 5px solid #3895D3;
+  margin: auto;
+  width: 50%;
+}
+
+.price-section h5{
+	font-size: 32px;
+	color: #3d6b99;
+	text-align: center;
+	background-color: #d0efff;
+}
+
+.price-section h6{
+	font-size: 24px;
+	color: #3d6b99;
+	text-align: left;
+}
+
+.price-section p{
+	font-size: 16px;
+	color: #3d6b99;
+	text-align: left;
+}
+.price-section table{
+	padding: 5px;
+  font-weight: 500;
+	border: 2px solid #3895D3;
+  background-color:#d0efff;
+  margin: auto;
+  width: 50%;
+}
+
 /* footer section*/
 .footer_section {
   background-color: #fbfdfd;
