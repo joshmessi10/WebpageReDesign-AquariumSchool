@@ -316,6 +316,13 @@ a:focus {
   width: 70%;
 }
 
+.about_section .detail-box svg{
+	float: left;
+	fill: #3D6B99;
+	margin-right: 20px;
+}
+
+
 .about_section .detail-box p {
   margin: 25px 0;
   color: #3D6B99;
@@ -840,8 +847,15 @@ a:focus {
     width: calc(50% - 15px);
 }
 
+.admission-section .title{
+    color: #3d6b99;
+		font-weight: bold;
+		font-size: 30px;
+}
+
 .admission-form .form-group label {
-    color: #040e27;
+    color: #3d6b99;
+		font-weight: 600;
 }
 
 .admission-form .form-group input {
@@ -851,6 +865,8 @@ a:focus {
     -moz-border-radius: 0;
     border-radius: 0;
     height: 50px;
+		color: #3d6b99;
+		width:300px;
 }
 
 .admission-form .form-group input[type="submit"] {
@@ -862,6 +878,7 @@ a:focus {
     font-size: 20px;
     font-weight: 500;
     margin-top: 10px;
+		color: #ffffff;
 }
 
 .admission-form .form-group .select-bar {
@@ -872,6 +889,7 @@ a:focus {
     -moz-border-radius: 0;
     border-radius: 0;
     height: 50px;
+		color: #3d6b99;
 }
 
 .admission-form .form-group .select-bar span {
@@ -896,25 +914,47 @@ a:focus {
 	border: 5px solid #3895D3;
   margin: auto;
   width: 50%;
+	border-top: none;
+	border-bottom: none;
 }
 
-.price-section h5{
+.price-section h1{
 	font-size: 32px;
-	color: #3d6b99;
+	color: #ffffff;
 	text-align: center;
-	background-color: #d0efff;
+	background-color: #3895D3;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.price-section h2{
+	font-size: 24px;
+	color: #ffffff;
+	text-align: center;
+	background-color: #3895D3;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.price-section ul{
+	font-size: 18px;
+	color: #ffffff;
+	text-align: left;
+	background-color: #3895D3;
+	list-style-type: "   😎 👉 ";
+	padding-bottom:10px;
+	padding-left:75px;
+
 }
 
 .price-section h6{
 	font-size: 24px;
 	color: #3d6b99;
-	text-align: left;
+	text-align: center;
 }
 
 .price-section p{
 	font-size: 16px;
 	color: #3d6b99;
-	text-align: left;
+	text-align: center;
 }
 .price-section table{
 	padding: 5px;
