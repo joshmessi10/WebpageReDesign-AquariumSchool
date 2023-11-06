@@ -351,6 +351,73 @@ a:focus {
   color: #023b48;
 }
 
+.service_section .button{
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	background-color: #023b48;
+	border: 1px solid #023b48;
+	color: #ffffff;
+}
+.service_section .button:hover{
+	background-color: #4CAF50;
+	color: white;
+}
+.service_section .accordion{
+	background-color:#d0efff;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	font-weight: bold;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 16px;
+	transition: 0.4s;
+  color: #3d6b99;
+  margin: 0px;
+  border-left: 2px solid #3895D3;
+	border-right: 2px solid #3895D3;
+	border-top: 2px solid #3895D3;
+  border-radius: 5px;
+	transition: max-height 0.2s ease-out;
+}
+
+.service_section .accordion:hover{
+	background-color: #ccc;
+}
+
+.service_section .active{
+	background-color: #ccc;
+}
+
+.service_section .panel{
+	width: 100%;
+	font-size: 16px;
+  color: #3d6b99;
+  text-align: left;
+  margin: 0px;
+  border: 2px solid #3895D3;
+  background-color:#d0efff;
+  border-radius: 5px;
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+.service_section .panel ul li{
+	border-bottom: 2px solid #3895D3;
+	list-style-type: none;
+	padding: 5px 5px 5px 5px;
+}
 .service_section .row .col-md-4 {
   display: -webkit-box;
   display: -ms-flexbox;

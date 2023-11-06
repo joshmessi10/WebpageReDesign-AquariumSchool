@@ -89,54 +89,6 @@
 
   <!-- service section -->
   <section class="service_section layout_padding">
-    <style>
-      .button {
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-      }
-      .button {
-        background-color: #023b48;
-        border: 1px solid #023b48;
-        color: #ffffff;
-      }
-
-      .button:hover {
-        background-color: #4CAF50;
-        color: white;
-      }
-      .accordion {
-        background-color: #eee;
-        color: #444;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        transition: 0.4s;
-      }
-
-      .active, .accordion:hover {
-        background-color: #ccc;
-      }
-
-      .panel {
-        padding: 0 18px;
-        background-color: white;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-      }
-      </style>
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 offset-md-2">
@@ -156,46 +108,40 @@
                   <p>
                     Aquí tus hijos podrán empezar a familiarizarse con el medio acuático, adquiriendo habilidades básicas.
                   </p>
-                  
+
                   <button class="button" onclick="window.modal1.showModal();">Saber más</button>
 
                   <dialog id="modal1">
                     <button onclick="window.modal1.close();" style="float: right;">X</button>
                     <h2 class="custom_heading"><span>Principiante</span></h2>
-                    <p>Principiante está compuesto por 2 niveles:</p>
-                    <button class="accordion">Adaptación Básica</button>
+                    <p style="float: left; font-size: 16px;">Principiante está compuesto por 2 niveles:</p>
+                    <button class="accordion">Adaptación Básica I</button>
                     <div class="panel">
                       <p><ul>
-                        <li>Correcciones estilo global pecho</li>
-                        <li>Agarre</li>
-                        <li>Tirón</li>
-                        <li>Recobro</li>
-                        <li>Trabajos de respiración estilo braza</li>
-                        <li>Ejercicios de desplazamiento dorsal y ventral</li>
-                        <li>Coordinación</li>
-                        <li>Entradas al agua</li>
-                        <li>Virajes</li>
-                      </ul>
-                    </p>
+                        <li>Burbujas en superficie e inmersión</li>
+                        <li>Ambientación al medio acuático</li>
+                        <li>Afianzamiento, caminar en el agua y saltar</li>
+                        <li>Trabajos iniciales parte panda y profunda de la piscina</li>
+                        <li>Ejercicios de inmersión inicial combinando el juego con la enseñanza</li>
+                        <li>Inicio saltos con apoyo</li>
+                        <li>Trabajos con elementos de apoyo iniciales para generar confianza en el agua</li>
+                        <li>Flotación ventral y dorsal con apoyo fijo y móvil</li>
+                        <li>Desplazamientos en posición dorsal y ventral con movimientos alternos de piernas</li>
+                      </ul></p>
+                    </div>
+                    <button class="accordion">Adaptación Básica II</button>
+                    <div class="panel">
+                      <p><ul>
+                        <li>Flotación ventral y dorsal con control respiratorio</li>
+                        <li>Desplazamientos en posición ventral y dorsal con/sin elementos de apoyo</li>
+                        <li>Manejo respiración inicial</li>
+                        <li>Desplazamientos patada y brazada alterna ventral y dorsal</li>
+                        <li>Desplazamientos desde la parte profunda</li>
+                        <li>Entradas al agua con/sin apoyo</li>
+                        <li>Ejercicios de iniciación de vadeo con elementos de apoyo</li>
+                      </ul></p>
                     </div>
 
-                    <script>
-                    var acc = document.getElementsByClassName("accordion");
-                    var i;
-
-                    for (i = 0; i < acc.length; i++) {
-                      acc[i].addEventListener("click", function() {
-                        this.classList.toggle("active");
-                        var panel = this.nextElementSibling;
-                        if (panel.style.maxHeight) {
-                          panel.style.maxHeight = null;
-                        } else {
-                          panel.style.maxHeight = panel.scrollHeight + "px";
-                        } 
-                      });
-                    }
-                    </script>
-                    
                   </dialog>
                 </div>
               </div>
@@ -215,8 +161,62 @@
                   <dialog id="modal2">
                     <button onclick="window.modal2.close();" style="float: right;">X</button>
                     <h2 class="custom_heading"><span>Intermedio</span></h2>
-                    <p>Intermedio está compuesto por 4 niveles:   </p>
-                    
+                    <p style="float: left; font-size: 16px;">Intermedio está compuesto por 4 niveles:   </p>
+                    <button class="accordion">Iniciación Estilo Pecho</button>
+                    <div class="panel">
+                      <p><ul>
+                        <li>Trabajos de patada con elementos de apoyo</li>
+                        <li>Ejercicios de respiración</li>
+                        <li>Ejercicios iniciales brazadas de estilo pecho</li>
+                        <li>Trabajos de barridos</li>
+                        <li>Desplazamientos dorsales y ventrales sin apoyo</li>
+                        <li>Coordinación estilo braza</li>
+                        <li>Entradas al agua</li>
+                        <li>Giros</li>
+                        <li>Manejo global estilo pecho</li>
+                      </ul></p>
+                    </div>
+                    <button class="accordion">Iniciación Estilo Mariposa</button>
+                    <div class="panel">
+                      <p><ul>
+                        <li>Ejercicios de ondulación con elementos de apoyo</li>
+                        <li>Trabajos de desplazamiento dorsal y ventral sin apoyo</li>
+                        <li>Respiración</li>
+                        <li>Trabajo de brazadas</li>
+                        <li>Coordinación ondulación y brazada</li>
+                        <li>Entradas al agua</li>
+                        <li>Virajes</li>
+                        <li>Desplazamientos ventrales y dorsales con brazada</li>
+                        <li>Manejo estilo global Mariposa</li>
+                      </ul></p>
+                    </div>
+                    <button class="accordion">Iniciación Estilo Libre</button>
+                    <div class="panel">
+                      <p><ul>
+                        <li>Trabajos de patada ventral con elementos de apoyo</li>
+                        <li>Ejercicios de inicio de brazada con elementos de apoyo</li>
+                        <li>Trabajos de patada ventral con elementos de apoyo</li>
+                        <li>Desplazamientos ventrales con movimientos alternos de brazos (elementos de apoyo)</li>
+                        <li>Ejercicios de coordinación acción brazos y acción piernas</li>
+                        <li>Saltos al agua con y sin apoyo de elementos</li>
+                        <li>Trabajos de desplazamiento dorsal, acción brazos</li>
+                        <li>Manejo global de estilo libre</li>
+                      </ul></p>
+                    </div>
+                    <button class="accordion">Iniciación Estilo Espalda</button>
+                    <div class="panel">
+                      <p><ul>
+                        <li>Ejercicios de patada dorsal con elementos de apoyo</li>
+                        <li>Ejercicios alternos de brazos con elementos de apoyo</li>
+                        <li>Flotaciones dorsales y ventrales sin apoyo</li>
+                        <li>Desplazamientos ventrales y dorsales con y sin apoyo</li>
+                        <li>Trabajos de desplazamiento dorsal sin apoyo</li>
+                        <li>Trabajos de movimientos alternos de brazos</li>
+                        <li>Coordinación acción de brazos y acción de piernas</li>
+                        <li>Saltos al agua con y sin elementos de apoyo</li>
+                        <li>Manejo global del estilo espalda</li>
+                      </ul></p>
+                    </div>
                   </dialog>
                 </div>
               </div>
@@ -236,7 +236,7 @@
                   <dialog id="modal3">
                     <button onclick="window.modal3.close();" style="float: right;" >X</button>
                     <h2 class="custom_heading"><span>Avanzado</span></h2>
-                    <p>Avanzado está compuesto por 4 niveles:</p>
+                    <p style="float: left; font-size: 16px;">Avanzado está compuesto por 4 niveles:</p>
                     <button class="accordion">Perfección Estilo Pecho</button>
                     <div class="panel">
                       <p><ul>
@@ -252,24 +252,59 @@
                       </ul>
                     </p>
                     </div>
-                    <script>
-                      var acc = document.getElementsByClassName("accordion");
-                      var i;
-                      
-                      for (i = 0; i < acc.length; i++) {
-                        acc[i].addEventListener("click", function() {
-                          this.classList.toggle("active");
-                          var panel = this.nextElementSibling;
-                          if (panel.style.maxHeight) {
-                            panel.style.maxHeight = null;
-                          } else {
-                            panel.style.maxHeight = panel.scrollHeight + "px";
-                          } 
-                        });
-                      }
-                      </script>
+                    <button class="accordion">Perfección Estilo Mariposa</button>
+                    <div class="panel">
+                      <p><ul>
+                        <li>Correcciones estilo global mariposa</li>
+                        <li>Tirón</li>
+                        <li>Empuje</li>
+                        <li>Recobro</li>
+                        <li>Fase aérea</li>
+                        <li>Fase acuática</li>
+                        <li>Ondulación</li>
+                        <li>Desplazamientos dorsales y ventrales</li>
+                        <li>Respiración</li>
+                        <li>Coordinación</li>
+                        <li>Entradas al agua</li>
+                        <li>Virajes</li>
+                      </ul>
+                    </p>
+                    </div>
+                    <button class="accordion">Perfección Estilo Libre</button>
+                    <div class="panel">
+                      <p><ul>
+                        <li>Correcciones estilo global libre</li>
+                        <li>Salida</li>
+                        <li>Recobro</li>
+                        <li>Entrada y extensión</li>
+                        <li>Agarre</li>
+                        <li>Trabajos de patada dorsal y ventral</li>
+                        <li>Ejercicios de respiración</li>
+                        <li>Coordinación</li>
+                        <li>Entradas al agua</li>
+                        <li>Virajes</li>
+                      </ul>
+                    </p>
+                    </div>
+                    <button class="accordion">Perfección Estilo Espalda</button>
+                    <div class="panel">
+                      <p><ul>
+                        <li>Correcciones estilo global espalda</li>
+                        <li>Entrada</li>
+                        <li>Agarre</li>
+                        <li>Tirón</li>
+                        <li>Empuje</li>
+                        <li>Trabajos de patada dorsal y ventral</li>
+                        <li>Ejercicios de coordinación</li>
+                        <li>Ejercicios de respiración</li>
+                        <li>Entradas al agua</li>
+                        <li>Virajes</li>
+                      </ul>
+                    </p>
+                    </div>
+
                   </dialog>
-                
+
                 </div>
               </div>
             </div>
@@ -282,6 +317,22 @@
     </div>
   </section>
 
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
   <!-- end service section -->
 
 
