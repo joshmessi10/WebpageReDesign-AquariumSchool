@@ -78,15 +78,13 @@ body {
 	margin: 25px 0;
   color: #3D6B99;
   font-size: 24px;
-  text-align:left;
+  text-align:center;
   font-weight: 700;
 }
-.hero_area dialog .form-group{
-	margin: 25px 0;
-  color: #3D6B99;
-  font-size: 20px;
-  text-align:left;
-  font-weight: 700;
+.hero_area dialog .form-group label {
+    color: #3D6B99;
+		font-size: 16px;
+	  text-align:left;
 }
 
 
@@ -97,11 +95,8 @@ body {
   text-align:center;
 }
 
-.hero_area dialog{
-  text-align:center;
-}
 
-.hero_area .navbar-nav .enter{
+.hero_area .navbar-nav dialog .enter{
 	margin: 25px 0;
   color: #ffffff;
   font-size: 20px;
@@ -113,12 +108,14 @@ body {
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	display:block;
 }
 
 .hero_area .navbar-nav .nav-link{
 	background: linear-gradient(to bottom, #1a98ca, #FFFFFF);
 	border-left: 2px solid #3895D3;
 	border-right: 2px solid #3895D3;
+
 }
 
 .sub_page .hero_area {
@@ -145,14 +142,14 @@ body {
 
 .header_section .quote_btn-container a {
   color: #434242;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
   padding: 10px 30px;
   color: #434242;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 a,
@@ -381,12 +378,19 @@ a:focus {
   text-align:justify;
 }
 
+.about_section .detail-box h2 {
+  margin: 25px 0;
+  color: #3D6B99;
+  font-size: 26px;
+  text-align:left;
+	font-weight: bold;
+}
+
 .about_section .detail-box h6 {
   margin: 25px 0;
   color: #3D6B99;
   font-size: 22px;
   text-align:left;
-  font-weight: 700;
 }
 
 .about_section .detail-box a {
@@ -510,6 +514,12 @@ a:focus {
 .service_section .detail_box h6 {
   font-weight: bold;
 }
+
+.service_section .detail_box h2 {
+  font-weight: bold;
+	color: #3895D3;
+}
+
 
 .service_section a {
   display: inline-block;
@@ -744,7 +754,7 @@ color:white;
 }
 
 .info_section {
-  background-color: #0dc3ff;
+  background-color: #0097CB;
 	color:white;
 }
 
@@ -830,12 +840,20 @@ color:white;
 	float: left;
 }
 
+.services_section_2 h2 {
+	text-transform: capitalize;
+}
+
+.services_section h2 {
+	text-transform: capitalize;
+}
+
 .services_taital {
 	width: 100%;
 	float: left;
 	font-size: 40px;
 	color: #fcfefe;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	padding-left: 15px;
 	padding-bottom: 40px;
 }
@@ -845,6 +863,14 @@ color:white;
 	float: left;
 	text-align: center;
 }
+
+.services_section_2 img {
+	max-width: 100%;
+	float: left;
+	text-align: center;
+}
+
+
 
 .button {
   border: none;
@@ -869,11 +895,31 @@ color:white;
   color: white;
 }
 
-.services_box {
+.services_section .services_section_2 .services_box_1 {
 	width: 100%;
-	border: 1px solid #ddf5fb;
+	background-color: #0097CB;
 	height: auto;
-	padding: 65px 30px;
+	padding: 35px 30px;
+	text-align: justify;
+
+}
+
+.services_box_2 {
+	width: 100%;
+	background-color: #0097CB;
+	height: auto;
+	padding: 50px 30px;
+	text-align: justify;
+
+}
+
+.services_box_3 {
+	width: 100%;
+	background-color: #0097CB;
+	height: auto;
+	padding: 70px 30px;
+	text-align: justify;
+
 }
 
 .pool_text {
@@ -881,7 +927,7 @@ color:white;
   font-size: 36px;
   font-weight: bold;
 	color: #90E0EF;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 .lorem_text {
@@ -927,7 +973,7 @@ color:white;
 
 /* services section end */
 
-/* hidroterapy section start */
+/* services section start */
 
 .hidro_section {
 	width: 100%;
@@ -940,24 +986,58 @@ color:white;
 	float: left;
 }
 
+.hidro_section_2 h2 {
+	text-transform: capitalize;
+}
+
+.hidro_section h2 {
+	text-transform: capitalize;
+}
+
 .hidro_taital {
 	width: 100%;
 	float: left;
 	font-size: 40px;
 	color: #fcfefe;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	padding-left: 15px;
 	padding-bottom: 40px;
 }
 
 .hidro_section img {
-	width: 100%;
+	max-width: 100%;
 	float: left;
 	text-align: center;
 }
-.hidro_section .hidro_section_2 .image_1 img {
-	height: 250px;
+
+.hidro_section_2 .image_1 {
+	max-width: 100%;
+	float: left;
+	text-align: center;
+	padding-bottom:35px;
 }
+
+.hidro_section_2 .image_4 {
+	max-width: 100%;
+	float: left;
+	text-align: center;
+	padding-top:35px;
+}
+
+.hidro_section .image_2 {
+	max-width: 100%;
+	float: left;
+	text-align: center;
+	padding-bottom:10px;
+}
+
+.hidro_section .image_5 {
+	max-width: 100%;
+	float: left;
+	text-align: center;
+	padding-top:10px;
+}
+
 
 
 .button {
@@ -983,11 +1063,33 @@ color:white;
   color: white;
 }
 
-.hidro_box {
-	width: 100%;
-	border: 1px solid #ddf5fb;
+.hidro_section .hidro_section_2 .hidro_box_1 {
+	max-width: 100%;
+	background-color: #0097CB;
+	height: auto;
+	padding: 20px 20px;
+	text-align: justify;
+
+}
+
+
+
+.hidro_box_2 {
+	max-width: 100%;
+	background-color: #0097CB;
+	height: auto;
+	padding: 32px 32px;
+	text-align: justify;
+
+}
+
+.hidro_box_3 {
+	max-width: 100%;
+	background-color: #0097CB;
 	height: auto;
 	padding: 10px 10px;
+	text-align: justify;
+
 }
 
 .pool_text {
@@ -995,15 +1097,25 @@ color:white;
   font-size: 36px;
   font-weight: bold;
 	color: #90E0EF;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 .lorem_text {
 	width: 100%;
 	font-size: 18px;
-	color: #ffffff;
+	color: #CAF0F8;
 	margin: 0px;
 	padding-top: 45px;
+}
+.hidro_section dialog p{
+  width: 100%;
+	font-size: 14px;
+  color: #3d6b99;
+  text-align: center;
+  margin: 0px;
+  border: 2px solid #3895D3;
+  background-color:#d0efff;
+  border-radius: 5px;
 }
 
 .readmore_bt {
@@ -1029,7 +1141,7 @@ color:white;
 }
 
 
-/* hidroterapy section end */
+/* services section end */
 
 
 /* about section main start */
@@ -1041,12 +1153,12 @@ color:white;
 
 .about_box2 {
 	width: 100%;
-	border: 1px solid #ffffff;
 	height: auto;
   padding: 50px 30px 0px 30px;
   color:#CAF0F8;
   font-size: 18px;
   text-align: justify;
+	background-color: #0097CB;
 }
 .about_box2 img{
   display: block;
@@ -1060,7 +1172,7 @@ color:white;
 	font-size: 48px;
 	color: #90E0EF;
 	text-align: center;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	font-family: 'DM Sans', sans-serif;
 }
 
@@ -1104,8 +1216,9 @@ color:white;
     width: auto;
     height: 60px;
     padding: 0 40px;
-    background: #2560d4;
-    text-transform: uppercase;
+		margin-left: 15px;
+    background: #0097CB;
+    text-transform: capitalize;
     font-size: 20px;
     font-weight: 500;
     margin-top: 10px;
