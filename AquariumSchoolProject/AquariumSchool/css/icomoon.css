@@ -1,5 +1,5 @@
-body {
-	background: #fff;
+<body {
+	background: linear-gradient(to bottom, #1a98ca, #FFFFFF);
 }
 @font-face {
     font-family: 'IcoMoon-Free';
@@ -12,12 +12,12 @@ body {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'IcoMoon-Free' !important;
     speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
+    font-style: italic;
+    font-weight: lighter;
+    font-variant: small-caps;
     text-transform: none;
-    line-height: 1;
-    
+    line-height: 2;
+
     /* Enable Ligatures ================ */
     letter-spacing: 0;
     -webkit-font-feature-settings: "liga";
@@ -1790,4 +1790,3 @@ body {
 .icon-uniA9:before {
     content: "\a9";
 }
-

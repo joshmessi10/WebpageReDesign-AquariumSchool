@@ -20,35 +20,35 @@ html {
 }
 
 body {
-	color: #666666;
-	font-size: 14px;
+	color: #000000;
+	font-size: 15px;
 	font-family: 'Poppins', sans-serif;
 	line-height: 1.80857;
 	font-weight: normal;
 	overflow-x: hidden;
 }
 .layout_padding {
-  padding: 75px 0;
+  padding: 80px 0;
 }
 
 .layout_padding2 {
-  padding: 45px 0;
+  padding: 50px 0;
 }
 
 .layout_padding2-top {
-  padding-top: 45px;
+  padding-top: 50px;
 }
 
 .layout_padding2-bottom {
-  padding-bottom: 45px;
+  padding-bottom: 50px;
 }
 
 .layout_padding-top {
-  padding-top: 75px;
+  padding-top: 80px;
 }
 
 .layout_padding-bottom {
-  padding-bottom: 75px;
+  padding-bottom: 80px;
 }
 
 .custom_heading {
@@ -56,7 +56,7 @@ body {
 }
 
 .custom_heading span {
-  color: #21d7ff;
+  color: rgb(148, 173, 237) 111, 131);
 }
 
 /*header section*/
@@ -65,12 +65,58 @@ body {
   position: relative;
 }
 
-.hero_area::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 15px;
-  background-color: #023b48;
+.hero_area button{
+	background: linear-gradient(to bottom, #1a98ca, #FFFFFF);
+	border-left: 2px solid #3895D3;
+	border-right: 2px solid #3895D3;
+	border-top: none;
+	border-bottom: none;
+	padding-top: 9px;
+	padding-bottom: 8px;
+}
+.hero_area dialog h2{
+	margin: 25px 0;
+  color: #3D6B99;
+  font-size: 24px;
+  text-align:left;
+  font-weight: 700;
+}
+.hero_area dialog .form-group{
+	margin: 25px 0;
+  color: #3D6B99;
+  font-size: 20px;
+  text-align:left;
+  font-weight: 700;
+}
+
+
+.hero_area .navbar-nav .forget{
+	margin: 25px 0;
+  color: #FF0000;
+  font-size: 16px;
+  text-align:center;
+}
+
+.hero_area dialog{
+  text-align:center;
+}
+
+.hero_area .navbar-nav .enter{
+	margin: 25px 0;
+  color: #ffffff;
+  font-size: 20px;
+  text-align:center;
+	border: 1px solid #3D6B99;
+	align-items: center;
+	background-color: #023b48;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.hero_area .navbar-nav .nav-link{
+	background: linear-gradient(to bottom, #1a98ca, #FFFFFF);
+	border-left: 2px solid #3895D3;
+	border-right: 2px solid #3895D3;
 }
 
 .sub_page .hero_area {
@@ -82,8 +128,8 @@ body {
 }
 
 .header_section {
-  background-color: #f6f8f7;
-  padding-top: 15px;
+  background: linear-gradient(to right,  #15779e);
+  padding-top: 10px;
 }
 
 .header_section .container-fluid {
@@ -238,7 +284,7 @@ a:focus {
   display: inline-block;
   padding: 10px 45px;
   background-color: #ffffff;
-  border: 1px solid #3388FF;
+  border: 1px solid #1a98ca;
   color: #023b48;
 }
 
@@ -527,11 +573,11 @@ a:focus {
 }
 
 .gallery-section {
-  background-color: #0dc3ff;
+  background: linear-gradient( #6cc3e5, #0a275c);
 }
 
 .index-gallery-section {
-  background-color: #0dc3ff;
+  background: linear-gradient( #6cc3e5, #0a275c);
 }
 .index-gallery-section .container {
   display: -webkit-box;
@@ -548,11 +594,11 @@ a:focus {
 }
 
 .index-gallery-section .container h2 {
-  color: #ffffff;
+  color: #000000;
 }
 
 .index-gallery-section .img_box {
-  margin: 15px 0;
+  margin: 30px 0;
 }
 
 .index-gallery-section .img_box img {
@@ -587,7 +633,7 @@ a:focus {
 .buy_section a {
   display: inline-block;
   padding: 12px 65px;
-  background-color: #023b48;
+  background-color: #047690;
   border: 1px solid #023b48;
   color: #ffffff;
 }
@@ -647,12 +693,14 @@ a:focus {
   position: relative;
   width: 50%;
   z-index: 9;
+	color:white;
 }
 
 .map_section .form_container form {
-  background-color: rgba(255, 255, 255, 0.98);
+  background-color: #0077b6;
   padding: 45px;
   margin: 75px 0;
+	color:white;
 }
 
 .map_section .form_container input {
@@ -662,10 +710,16 @@ a:focus {
   border-bottom: 1px solid #111111;
   padding-top: 35px;
   width: 100%;
+	color:white;
+
+}
+.map_section .form_container input::-webkit-input-placeholder {
+  color: white;
 }
 
 .map_section .form_container input.message-box {
   padding-top: 55px;
+color:white;
 }
 
 .map_section .form_container button {
@@ -686,6 +740,7 @@ a:focus {
 
 .info_section {
   background-color: #0dc3ff;
+	color:white;
 }
 
 .info_items {
@@ -921,19 +976,19 @@ a:focus {
 }
 
 .admission-form .form-group label {
-    color: #3d6b99;
+    color: #040e27;
 		font-weight: 600;
 }
 
 .admission-form .form-group input {
     background: transparent;
-    border: 1px solid #e5e5e5;
+    border: 2px solid #000000;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
     height: 50px;
 		color: #3d6b99;
-		width:300px;
+		width:250px;
 }
 
 .admission-form .form-group input[type="submit"] {
