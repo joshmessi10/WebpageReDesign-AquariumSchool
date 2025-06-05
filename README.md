@@ -7,7 +7,7 @@ This was my **first web design project**, where I reimagined and redesigned an e
 - ✅ Redesigned the UI for better clarity, spacing, and visual appeal.
 - ✅ Improved layout structure using semantic HTML.
 - ✅ Applied custom styling for a clean and modern look.
-- ✅ Focused on accessibility and responsive design.
+- ✅ Focused on content display, accessibility and responsive design.
 
 ## 📸 Screenshots
 
