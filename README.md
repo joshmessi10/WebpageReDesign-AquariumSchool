@@ -15,7 +15,7 @@ This was my **first web design project**, where I reimagined and redesigned an e
 
 ## 🔗 Live Demo
 
-👉 **[Click here to view the redesigned site](https://joshmessi10.github.io/WebpageReDesign-Aquarium-School/)**
+👉 **[Click here to view the redesigned site](https://joshmessi10.github.io/WebpageReDesign-AquariumSchool/)**
 
 ---
 
