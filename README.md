@@ -11,7 +11,7 @@ This was my **first web design project**, where I reimagined and redesigned an e
 
 ## 📸 Screenshots
 
-![Screenshot](https://github.com/YOUR_USERNAME/Aquarium-School/assets/example-image.png) <!-- (Optional) Replace or remove this line -->
+![Screenshot](![Image](https://github.com/user-attachments/assets/a94d5712-54b0-43f9-9e2a-bd79dbbc882b)) <!-- (Optional) Replace or remove this line -->
 
 ## 🔗 Live Demo
 
